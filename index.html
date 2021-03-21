@@ -601,29 +601,30 @@ div.tocify {
 <span id="cb17-16"><a href="#cb17-16" aria-hidden="true" tabindex="-1"></a>  }</span>
 <span id="cb17-17"><a href="#cb17-17" aria-hidden="true" tabindex="-1"></a>}</span>
 <span id="cb17-18"><a href="#cb17-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-19"><a href="#cb17-19" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>(i <span class="cf">in</span> <span class="fu">seq_along</span>(Q_Q<span class="sc">$</span>gender)){</span>
-<span id="cb17-20"><a href="#cb17-20" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (Q_Q<span class="sc">$</span>gender[i] <span class="sc">==</span> <span class="st">&quot;M&quot;</span>){</span>
-<span id="cb17-21"><a href="#cb17-21" aria-hidden="true" tabindex="-1"></a>    Q_Q<span class="sc">$</span>gender[i] <span class="ot">&lt;-</span> <span class="dv">1</span></span>
-<span id="cb17-22"><a href="#cb17-22" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb17-23"><a href="#cb17-23" aria-hidden="true" tabindex="-1"></a>  <span class="cf">else</span> <span class="cf">if</span> (Q_Q<span class="sc">$</span>gender[i] <span class="sc">==</span> <span class="st">&quot;F&quot;</span>){</span>
-<span id="cb17-24"><a href="#cb17-24" aria-hidden="true" tabindex="-1"></a>    Q_Q<span class="sc">$</span>gender[i] <span class="ot">&lt;-</span> <span class="dv">2</span></span>
-<span id="cb17-25"><a href="#cb17-25" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb17-26"><a href="#cb17-26" aria-hidden="true" tabindex="-1"></a>  <span class="cf">else</span>{</span>
-<span id="cb17-27"><a href="#cb17-27" aria-hidden="true" tabindex="-1"></a>    Q_Q<span class="sc">$</span>gender[i] <span class="ot">&lt;-</span> <span class="dv">0</span></span>
-<span id="cb17-28"><a href="#cb17-28" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb17-29"><a href="#cb17-29" aria-hidden="true" tabindex="-1"></a>  Q_Q<span class="sc">$</span>gender[i] <span class="ot">&lt;-</span> <span class="fu">as.integer</span>(Q_Q<span class="sc">$</span>gender[i])</span>
-<span id="cb17-30"><a href="#cb17-30" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb17-31"><a href="#cb17-31" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-32"><a href="#cb17-32" aria-hidden="true" tabindex="-1"></a><span class="co"># Do Not modify the code below</span></span>
-<span id="cb17-33"><a href="#cb17-33" aria-hidden="true" tabindex="-1"></a>Q_Q</span>
-<span id="cb17-34"><a href="#cb17-34" aria-hidden="true" tabindex="-1"></a><span class="co"># Should print out</span></span>
-<span id="cb17-35"><a href="#cb17-35" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;   nickname gender grade q_self q_teacher GPA</span></span>
-<span id="cb17-36"><a href="#cb17-36" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 1       Fu      2     5     95        95  NA</span></span>
-<span id="cb17-37"><a href="#cb17-37" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 2     Fang      2     5     98        98 4.3</span></span>
-<span id="cb17-38"><a href="#cb17-38" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 3      Mau      2     4     85        85  NA</span></span>
-<span id="cb17-39"><a href="#cb17-39" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 4      Lin      2     4     86        86  NA</span></span>
-<span id="cb17-40"><a href="#cb17-40" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 5      Ben      2     4     87        87  NA</span></span>
-<span id="cb17-41"><a href="#cb17-41" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 6      Ber      2     2     78        87 3.8</span></span></code></pre></div>
+<span id="cb17-19"><a href="#cb17-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-20"><a href="#cb17-20" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>(i <span class="cf">in</span> <span class="fu">seq_along</span>(Q_Q<span class="sc">$</span>gender)){</span>
+<span id="cb17-21"><a href="#cb17-21" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (Q_Q<span class="sc">$</span>gender[i] <span class="sc">==</span> <span class="st">&quot;M&quot;</span>){</span>
+<span id="cb17-22"><a href="#cb17-22" aria-hidden="true" tabindex="-1"></a>    Q_Q<span class="sc">$</span>gender[i] <span class="ot">&lt;-</span> <span class="dv">1</span></span>
+<span id="cb17-23"><a href="#cb17-23" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb17-24"><a href="#cb17-24" aria-hidden="true" tabindex="-1"></a>  <span class="cf">else</span> <span class="cf">if</span> (Q_Q<span class="sc">$</span>gender[i] <span class="sc">==</span> <span class="st">&quot;F&quot;</span>){</span>
+<span id="cb17-25"><a href="#cb17-25" aria-hidden="true" tabindex="-1"></a>    Q_Q<span class="sc">$</span>gender[i] <span class="ot">&lt;-</span> <span class="dv">2</span></span>
+<span id="cb17-26"><a href="#cb17-26" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb17-27"><a href="#cb17-27" aria-hidden="true" tabindex="-1"></a>  <span class="cf">else</span>{</span>
+<span id="cb17-28"><a href="#cb17-28" aria-hidden="true" tabindex="-1"></a>    Q_Q<span class="sc">$</span>gender[i] <span class="ot">&lt;-</span> <span class="dv">0</span></span>
+<span id="cb17-29"><a href="#cb17-29" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb17-30"><a href="#cb17-30" aria-hidden="true" tabindex="-1"></a>  Q_Q<span class="sc">$</span>gender[i] <span class="ot">&lt;-</span> <span class="fu">as.integer</span>(Q_Q<span class="sc">$</span>gender[i])</span>
+<span id="cb17-31"><a href="#cb17-31" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb17-32"><a href="#cb17-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-33"><a href="#cb17-33" aria-hidden="true" tabindex="-1"></a><span class="co"># Do Not modify the code below</span></span>
+<span id="cb17-34"><a href="#cb17-34" aria-hidden="true" tabindex="-1"></a>Q_Q</span>
+<span id="cb17-35"><a href="#cb17-35" aria-hidden="true" tabindex="-1"></a><span class="co"># Should print out</span></span>
+<span id="cb17-36"><a href="#cb17-36" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;   nickname gender grade q_self q_teacher GPA</span></span>
+<span id="cb17-37"><a href="#cb17-37" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 1       Fu      2     5     95        95  NA</span></span>
+<span id="cb17-38"><a href="#cb17-38" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 2     Fang      2     5     98        98 4.3</span></span>
+<span id="cb17-39"><a href="#cb17-39" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 3      Mau      2     4     85        85  NA</span></span>
+<span id="cb17-40"><a href="#cb17-40" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 4      Lin      2     4     86        86  NA</span></span>
+<span id="cb17-41"><a href="#cb17-41" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 5      Ben      2     4     87        87  NA</span></span>
+<span id="cb17-42"><a href="#cb17-42" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 6      Ber      2     2     78        87 3.8</span></span></code></pre></div>
 <pre><code>#&gt;   nickname gender grade q_self q_teacher GPA
 #&gt; 1    SeanN      1     5     95        95  NA
 #&gt; 2    solid      0     5     98        98 4.3

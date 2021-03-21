@@ -224,6 +224,7 @@ for(i in seq_along(Q_Q$GPA)){
   }
 }
 
+
 for(i in seq_along(Q_Q$gender)){
   if (Q_Q$gender[i] == "M"){
     Q_Q$gender[i] <- 1
