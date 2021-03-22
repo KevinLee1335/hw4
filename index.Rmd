@@ -236,8 +236,8 @@ for(i in seq_along(Q_Q$gender)){
   else{
     Q_Q$gender[i] <- 0
   }
-  Q_Q$gender[i] <- as.integer(Q_Q$gender[i])
 }
+Q_Q$gender <- as.numeric(Q_Q$gender)
 
 # Do Not modify the code below
 Q_Q
@@ -259,6 +259,10 @@ Q_Q
   
 ```{r}
 # Write your code here
+cute_cute <- cbind(cute_cute, favorite_word, c(1:85))
+
+cbind()
+
 
 # Do not modify the code below
 cute_cute
